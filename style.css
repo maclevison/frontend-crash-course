@@ -1,0 +1,78 @@
+body {
+  background-color: #181b1f;
+  color: #d1d1d2;
+  font-family: "Roboto Mono", monospace;
+}
+
+a {
+  color: #d1d1d2;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.top .logo {
+  height: 24px;
+}
+
+.page-content,
+.contact {
+  position: absolute;
+}
+.page-content {
+  bottom: 16px;
+  left: 16px;
+  width: 50%;
+  font-family: "Poppins", sans-serif;
+  color: #ff5963;
+}
+
+.description {
+  font-family: "Roboto Mono", monospace;
+  line-height: 30px;
+  letter-spacing: 2px;
+  width: 60%;
+  display: inline-block;
+}
+
+.page-title {
+  font-size: 96px;
+  line-height: 108px;
+  letter-spacing: 40px;
+}
+
+.contact {
+  right: 16px;
+  bottom: 16px;
+  display: flex;
+}
+
+.label {
+  display: block;
+  padding-right: 190px;
+  margin-right: 16px;
+  position: relative;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.label::after {
+  content: "";
+  position: absolute;
+  background-color: #d1d1d2;
+  width: 168px;
+  height: 1px;
+  right: 0;
+}
